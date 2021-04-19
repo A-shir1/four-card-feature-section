@@ -1,0 +1,240 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --vd-blue: hsl(234, 12%, 34%);
+    --grayblue: hsl(229, 6%, 66%);
+    --vl-gray: hsl(0, 0%, 98%);
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    font-size: 15px;
+    margin: 5rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#text{
+    text-align: center;
+}
+
+.heading{
+    margin: 0;
+    font-size: 2.3rem;
+    color: var(--vd-blue);
+}
+
+.fh{
+    font-weight: 200;
+}
+
+.para{
+    color: var(--grayblue);
+    width: 50%;
+    margin:  1rem auto;
+    /* background-color: red; */
+}
+
+
+#cardSection{
+    /* background-color: red; */
+    width: 100%;
+    margin: 5rem auto ;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25.5rem;
+    margin: auto;
+    width: 79%;
+}
+
+.centerCards{
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    justify-content: space-between;
+    height: 100%;
+    width: 30%;
+}
+
+.card{
+    /* background-color: green; */
+    width: 30%;
+    height: 12rem;
+}
+
+.centerCard{
+    /* height: 12rem; */
+    /* background-color: brown; */
+}
+
+.card, .centerCard{
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.5rem 0.5rem 0rem var(--vd-blue);
+    height: 12rem;
+}
+
+.cardWrapper{
+    margin: 1.2rem;
+    /* background-color: pink; */
+}
+
+.cardHeading{
+    margin-bottom: 0;
+    color: var(--vd-blue);
+}
+
+.cardText{
+    /* background-color: cyan; */
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--grayblue);
+    line-height: 1.3rem;
+}
+
+.icon{
+    float: right;
+    width: 3.3rem;
+}
+
+.lc, .rc, .uc, .dc{
+    box-sizing: border-box;
+}
+
+.lc{
+    border-top: 4px solid var(--cyan);
+}
+
+.rc{
+    border-top: 4px solid var(--blue);    
+}
+
+.uc{
+    border-top: 4px solid var(--red);
+}
+
+.dc{
+    border-top: 4px solid var(--orange);
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width: 1040px){
+    .cards{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 975px){
+    .cardText{
+        font-size: 0.7rem;
+    }
+
+    .icon{
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .heading{
+        font-size: 2rem;
+    }
+
+    .para{
+        width: 70%;
+        font-size: 0.9rem;
+    }
+
+    #cardSection{
+        margin: 3rem auto 1rem auto;
+    }
+
+    .cards{
+        width: 95%;
+        justify-content: space-evenly;
+    }
+
+    .card, .centerCards{
+        width: 15rem;
+    }
+
+    .card, .centerCard{
+        height: 10rem;
+    }
+
+    .cardHeading{
+        font-size: 1rem;
+    }
+
+    .cardText{
+        font-size: 0.6rem;
+    }
+
+    .icon{
+        width: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .icon{
+        width: 2rem;
+    }
+
+    .cards{
+        width: 99%;
+    }
+}
+
+
+@media screen and (max-width: 700px){    
+    .cards{
+        flex-direction: column;
+        height: 45rem;
+
+    }
+
+    .centerCards{
+        /* background-color: red; */
+        height: 21rem;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .heading{
+        font-size: 1.7rem;
+    }
+
+    .para{
+        font-size: 0.8rem;
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .heading{
+        font-size: 1.5rem;
+    }
+
+    .para{
+        font-size: 0.7rem;
+    }
+}
